@@ -1,0 +1,46 @@
+.brown{
+  color: white;
+}
+
+#second-section{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 5px;
+  grid-template-areas: 
+    "second-section1 second-section2"
+    "second-section1 second-section2"
+    "second-section1 second-section3"
+    "second-section4 second-section3"
+    ;
+  }
+#second-section1{
+  grid-area: second-section1;
+  
+}
+#second-section2{
+  grid-area: second-section2;
+  background-color:#fad68e;
+  line-height: 4;
+  color: grey;
+  text-align: center;
+}
+#second-section3{
+  grid-area: second-section3;
+  background-color: #020001;
+}
+#second-section4{
+  grid-area: second-section4;
+  line-height: 4;
+  text-align: center;
+}
+@media (min-width: 768){
+  #second-section{
+    grid-template-areas: 
+      "second-section1 second-section1"
+      "second-section2 second-section2"
+      "second-section3 second-section3"
+      "second-section4 second-section4"
+      ;
+    }
+}
